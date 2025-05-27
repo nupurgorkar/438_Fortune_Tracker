@@ -2,7 +2,7 @@
   "name": "my-react-app-fortune",
   "private": true,
   "version": "0.0.0",
-  "proxy" : "http://localhost:5000",
+  "proxy": "http://localhost:5000",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,9 +15,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.0"
+    "react-router-dom": "^7.6.1",
+    "wikiquote": "^0.5.0"
   }
 }
