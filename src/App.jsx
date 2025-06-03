@@ -1,11 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AddFortune from './components/AddFortune/addFortune.jsx';
-import AddFortuneManual from './components/AddFortune/addFortuneManual.jsx';
 import DailyQuote from './components/DailyQuote/DailyQuote.jsx';
 import Navbar from './components/Navbar/navbar.jsx';
-import Archive from './pages/Archive.jsx';
-import Favorites from './pages/Favorites.jsx';
+import Archive from './components/Archive/archive.jsx';
+import Favorites from './components/Favorites/favorites.jsx';
 
 
 const Home = () => (

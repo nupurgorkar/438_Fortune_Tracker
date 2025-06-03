@@ -1,0 +1,43 @@
+.favorite-card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;  width: 100%;
+  height: 200px;
+}
+
+.favorite-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.favorite-card .card-body {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.favorite-card .card-text {
+  font-size: 1.1rem;
+  color: #241e6a;
+  margin-bottom: 1rem;
+}
+
+.favorite-card .text-muted {
+  font-size: 0.9rem;
+}
+
+.favorite-card small.text-muted {
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Add star icon for favorite status */
+.favorite-card::before {
+  content: "★";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #ffd700;
+  font-size: 1.2rem;
+}

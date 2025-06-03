@@ -1,0 +1,81 @@
+
+/* Archive-specific card styles */
+.archive-fortune-card,
+.archive-reflection-card {
+  height: 200px;
+  transition: transform 0.2s;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.archive-fortune-card {
+  background-color: #241e6a;
+  color: white;
+}
+
+.archive-fortune-card .card-body,
+.archive-reflection-card .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.archive-fortune-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  
+  color: white;
+}
+
+.archive-date {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+
+}
+
+.archive-reflection-card textarea {
+  height: 60px !important;
+  resize: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.archive-reflection-card textarea:focus {
+  border-color: #241e6a;
+  box-shadow: 0 0 0 0.2rem rgba(36, 30, 106, 0.25);
+}
+
+.archive-reflection-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.archive-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.archive-row {
+  margin: 0 -1rem;
+}
+
+.archive-column {
+  padding: 0 1rem;
+}
+
+.archive-section-header {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
