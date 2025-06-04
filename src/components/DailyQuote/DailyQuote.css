@@ -12,7 +12,7 @@ header {
 
 p {
   font-size: 1.2rem;
-  color: #413a04;
+  color: #241e6a
 }
 
 .cards {
@@ -23,12 +23,36 @@ p {
   padding: 2rem;
 }
 .card {
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 8px;
   padding: 1rem;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 .card h3 {
   margin-top: 0;
+}
+
+/* Button styles */
+button.btn-primary {
+  background-color: #584f9a !important;
+  border-color: #584f9a !important;
+
+}
+button.btn-primary:hover, 
+.btn-primary:active, 
+.btn-primary:focus {
+  background-color: #19003b !important;
+  border-color:#19003b !important;
+}
+
+button.btn-secondary {
+  background-color: #ececde !important;
+  color: #241e6a !important;
+  border-color: #ececde !important;
 }

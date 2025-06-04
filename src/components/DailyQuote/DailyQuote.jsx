@@ -57,7 +57,7 @@ function DailyQuote() {
       const loadedFortunes = await getFortunes();
       setSavedQuotes(loadedFortunes);
       
-      // Update localStorage and state to prevent more saves today
+      // Update localStorage and state to prevent more saves today for non-manual fortune from list
       localStorage.setItem('lastSaveDate', new Date().toLocaleDateString());
       setCanSaveDaily(false);
     } catch (error) {
@@ -109,7 +109,7 @@ function DailyQuote() {
         <div className="d-flex align-items-center justify-content-center gap-3 mb-4">
           <Button 
             onClick={handleSaveQuote}
-            style={{ backgroundColor: '#6B5F1E', borderColor: '#6B5F1E' }}
+            style={{ backgroundColor: '#9e4244', borderColor: '#9e4244' }}
             disabled={!canSaveDaily}
           >
             {canSaveDaily ? 'Save Fortune' : 'Fortune Already Saved Today'}
@@ -127,7 +127,7 @@ function DailyQuote() {
               id="manualFortuneInput"
               name="manualFortune"
             />
-            <Button variant="primary" type="submit" style={{ backgroundColor: '#6B5F1E', borderColor: '#6B5F1E' }}>
+            <Button variant="primary" type="submit" style={{ backgroundColor: '#9e4244', borderColor: '#9e4244' }}>
               Add Manual Fortune
             </Button>
           </InputGroup>
@@ -204,7 +204,7 @@ function DailyQuote() {
                     />
                     <div className="d-flex align-items-center mt-2">
                       <Button 
-                        variant="secondary"
+                        variant="primary"
                         size="sm"
                         className="me-2"
                         disabled={!savedQuote.isReflectionChanged}
